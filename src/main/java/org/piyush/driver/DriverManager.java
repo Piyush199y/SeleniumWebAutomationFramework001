@@ -15,14 +15,14 @@ public class DriverManager {
     }
 
     @BeforeMethod
-    static void inIt(){
+    public static void inIt(){
         if(driver == null){
             driver = new EdgeDriver();
         }
     }
 
     @AfterMethod
-    static void down(){
+    public static void down(){
         if(driver!=null){
             driver.quit();
             driver = null;

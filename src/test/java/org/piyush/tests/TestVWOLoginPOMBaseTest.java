@@ -3,7 +3,7 @@ import org.piyush.pages.pageObjectModel.loginPage_POM;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestVWOLoginPOM2 {
+public class TestVWOLoginPOMBaseTest {
     @Test
     public void testLoginPositive(){
 

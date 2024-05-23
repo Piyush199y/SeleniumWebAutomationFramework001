@@ -2,14 +2,14 @@ package org.piyush.pages.pageObjectModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.piyush.base.CommonToAllPage;
 
-public class loginPage_POM {
+public class loginPage_POM extends CommonToAllPage {
 
     WebDriver driver;
 
     public loginPage_POM (){    // THIS IS A CONSTRUCTOR
-        driver = new EdgeDriver();
-        driver.get("https://app.vwo.com/#/login");
+        super();
 
     }
 
@@ -19,9 +19,9 @@ public class loginPage_POM {
     By errorMsg = By.id("js-notification-box-msg");
 
     public String loginVWOInvalidCreds(){
-        driver.findElement(username).sendKeys("admin");
-        driver.findElement(password).sendKeys("admin");
-        driver.findElement(submitButton).click();
+        enterInput(username, "admin");
+        enterInput(password, "admin");
+        clickElement(submitButton);
 
         try {
             Thread.sleep(3000);
