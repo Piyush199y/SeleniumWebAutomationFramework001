@@ -20,6 +20,8 @@ public class DriverManager {
     static void down(){
         if(driver!=null){
             driver.quit();
+            driver = null;
+
         }
     }
 
