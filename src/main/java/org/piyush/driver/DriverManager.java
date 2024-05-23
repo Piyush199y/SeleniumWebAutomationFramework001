@@ -7,7 +7,12 @@ import org.testng.annotations.BeforeTest;
 
 public class DriverManager {
 
-    static WebDriver driver;
+    public static WebDriver driver;
+
+    public static WebDriver getDriver(){
+        return driver;
+
+    }
 
     @BeforeMethod
     static void inIt(){
