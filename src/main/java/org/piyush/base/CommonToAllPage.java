@@ -1,20 +1,21 @@
 package org.piyush.base;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.piyush.driver.DriverManager;
-
 import java.time.Duration;
-
 import static org.piyush.driver.DriverManager.getDriver;
 
 public class CommonToAllPage {
 
     public CommonToAllPage(){
-
     }
+
+    public void openVWOUrl(){
+        getDriver().get("https://app.vwo.com");
+    }
+
 
     public void clickElement(By by){
         getDriver().findElement(by).click();
@@ -22,7 +23,7 @@ public class CommonToAllPage {
     }
 
     public void enterInput(By by, String key){
-        DriverManager.getDriver().findElement(by).sendKeys(key);
+        getDriver().findElement(by).sendKeys(key);
 
     }
 

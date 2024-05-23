@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.piyush.base.CommonToAllPage;
 
+import static org.piyush.driver.DriverManager.getDriver;
+
 public class loginPage_POM extends CommonToAllPage {
 
     WebDriver driver;
@@ -18,6 +20,7 @@ public class loginPage_POM extends CommonToAllPage {
     By submitButton = By.id("js-login-btn");
     By errorMsg = By.id("js-notification-box-msg");
 
+
     public String loginVWOInvalidCreds(){
         enterInput(username, "admin");
         enterInput(password, "admin");
@@ -29,7 +32,7 @@ public class loginPage_POM extends CommonToAllPage {
             throw new RuntimeException(e);
         }
 
-        return driver.findElement(errorMsg).getText();
+        return getElement(errorMsg).getText();
 
     }
 
