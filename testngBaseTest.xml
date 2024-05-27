@@ -3,11 +3,6 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
           name="C:/Users/piyus/SeleniumWebAutomationFramework001/src/test/java/org/piyush/tests/TestVWOLoginPOMBaseTest.java">
-        <groups>
-            <run>
-                <include name="Sanity"></include>
-            </run>
-        </groups>
         <classes>
             <class name="org.piyush.tests.TestVWOLoginPOMBaseTest">
             </class>
