@@ -40,5 +40,9 @@ public class loginPage_POM extends CommonToAllPage {
         // Redirect to Dashboard
     }
 
+    public dashboardPage_POM afterLoginVWOValidCreds(){
+        return new dashboardPage_POM();
+    }
+
 
 }

@@ -5,11 +5,20 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestVWOLoginPOMBaseTest extends CommonToAllTest {
-    @Test
+    @Test (groups = "Sanity")
     public void testLoginNegative(){
         loginPage_POM loginPagePom = new loginPage_POM();
         loginPagePom.openVWOUrl();
         String errorMsgtext = loginPagePom.loginVWOInvalidCreds();
+        Assert.assertEquals(errorMsgtext, "Your email, password, IP address or location did not match");
+
+    }
+
+    @Test (groups = "Sanity")
+    public void testLoginPositive(){
+        loginPage_POM loginPagePom = new loginPage_POM();
+        loginPagePom.openVWOUrl();
+        loginPagePom.loginToVWOWithValidCreds();
         Assert.assertEquals(errorMsgtext, "Your email, password, IP address or location did not match");
 
     }

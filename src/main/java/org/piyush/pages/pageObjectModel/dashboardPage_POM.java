@@ -3,8 +3,9 @@ package org.piyush.pages.pageObjectModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.piyush.base.CommonToAllPage;
 
-public class dashboardPage_POM {
+public class dashboardPage_POM extends CommonToAllPage {
 
     WebDriver driver;
 
@@ -16,9 +17,9 @@ public class dashboardPage_POM {
     By userNameOnDashboard = By.cssSelector("[data-qa='lufexuloga']");
 
     public String loggedInUserName(){
-        driver.findElement(userNameOnDashboard);
+        presenceOfElement(userNameOnDashboard);
+        return getElement(userNameOnDashboard).getText();
 
-        return null;
     }
 
 
