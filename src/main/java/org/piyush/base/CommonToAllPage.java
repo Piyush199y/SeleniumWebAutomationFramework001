@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.piyush.driver.DriverManager;
+import org.piyush.utils.PropertyReader;
+
 import java.time.Duration;
 import static org.piyush.driver.DriverManager.getDriver;
 
@@ -13,7 +15,7 @@ public class CommonToAllPage {
     }
 
     public void openVWOUrl(){
-        getDriver().get("https://app.vwo.com");
+        getDriver().get(PropertyReader.readyKey("url"));
     }
 
 

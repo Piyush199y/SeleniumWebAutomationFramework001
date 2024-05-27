@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.piyush.base.CommonToAllPage;
+import org.piyush.utils.PropertyReader;
 
 import static org.piyush.driver.DriverManager.getDriver;
 
@@ -22,18 +23,22 @@ public class loginPage_POM extends CommonToAllPage {
 
 
     public String loginVWOInvalidCreds(){
-        enterInput(username, "admin");
+        enterInput(username, PropertyReader.readyKey("username"));
         enterInput(password, "admin");
         clickElement(submitButton);
-
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
+        presenceOfElement(errorMsg);
+        visibilityOfElement(errorMsg);
         return getElement(errorMsg).getText();
 
     }
+
+    // Test 2
+        public void loginToVWOWithValidCreds() {
+        enterInput(username, PropertyReader.readyKey("username"));
+        enterInput(password, PropertyReader.readyKey("password"));
+        clickElement(submitButton);
+        // Redirect to Dashboard
+    }
+
 
 }
