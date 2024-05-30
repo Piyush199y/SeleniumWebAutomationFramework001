@@ -15,7 +15,8 @@ public class CommonToAllPage {
     }
 
     public void openVWOUrl(){
-        getDriver().get(PropertyReader.readyKey("url"));
+        String url = PropertyReader.readyKey("url");
+       getDriver().get(url);
     }
 
 
@@ -24,20 +25,20 @@ public class CommonToAllPage {
 
     }
 
-    public void clickElement(WebElement element){
-        element.click();
+//    public void clickElement(WebElement element){  // Page factory
+//        element.click(); }
 
-    }
+
 
     public void enterInput(By by, String key){
         getDriver().findElement(by).sendKeys(key);
 
     }
 
-    public void enterInput(WebElement element, String key){
-        element.sendKeys(key);
-
-    }
+//    public void enterInput(WebElement element, String key){
+//        element.sendKeys(key);
+//
+//    }
 
     public WebElement presenceOfElement(By elementLocation) {
         return new WebDriverWait(getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.presenceOfElementLocated(elementLocation));

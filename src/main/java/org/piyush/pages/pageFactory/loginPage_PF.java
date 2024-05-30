@@ -29,10 +29,10 @@ public class loginPage_PF extends CommonToAllPage {
 
 
     public String loginVWOInvalidCreds(){
-        enterInput(username, PropertyReader.readyKey("username"));
-        enterInput(password, "admin");
-        clickElement(submitButton);
-//        presenceOfElement(errorMsg);
+//        enterInput(username, PropertyReader.readyKey("username"));
+//        enterInput(password, "admin");
+//        clickElement(submitButton);
+//       presenceOfElement(errorMsg);
 //        visibilityOfElement(errorMsg);
         return getElement(null).getText();
 
@@ -40,9 +40,9 @@ public class loginPage_PF extends CommonToAllPage {
 
     // Test 2
     public void loginToVWOWithValidCreds() {
-        enterInput(username, PropertyReader.readyKey("username"));
-        enterInput(password, PropertyReader.readyKey("password"));
-        clickElement(submitButton);
+//        enterInput(username, PropertyReader.readyKey("username"));
+//        enterInput(password, PropertyReader.readyKey("password"));
+//        clickElement(submitButton);
         // Redirect to Dashboard
     }
 

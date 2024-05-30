@@ -10,7 +10,6 @@ public class DriverManagerTL {
 
     // public static WebDriver driver;  // Local/static variable
 
-
     public static void setDriver(WebDriver driverRef){
         dr.set(driverRef);
     }
@@ -26,14 +25,17 @@ public class DriverManagerTL {
 
 
     public static void init() {
-        if (Objects.isNull(DriverManagerTL.getDriver())) {
-            WebDriver driver = new EdgeDriver();
+        if (Objects.isNull(getDriver())) {
+            EdgeOptions edgeOptions = new EdgeOptions();
+            edgeOptions.addArguments("--start-maximized");
+            edgeOptions.addArguments("--guest");
+            WebDriver driver = new EdgeDriver(edgeOptions);
             setDriver(driver);
         }
     }
 
     public static void down() {
-        if(Objects.nonNull(DriverManagerTL.getDriver())){
+        if(Objects.nonNull(getDriver())){
             getDriver().quit();
             unload();
         }
