@@ -24,8 +24,18 @@ public class CommonToAllPage {
 
     }
 
+    public void clickElement(WebElement element){
+        element.click();
+
+    }
+
     public void enterInput(By by, String key){
         getDriver().findElement(by).sendKeys(key);
+
+    }
+
+    public void enterInput(WebElement element, String key){
+        element.sendKeys(key);
 
     }
 
