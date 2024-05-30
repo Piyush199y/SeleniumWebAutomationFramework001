@@ -5,9 +5,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.piyush.driver.DriverManager;
 import org.piyush.utils.PropertyReader;
-
 import java.time.Duration;
-import static org.piyush.driver.DriverManager.getDriver;
+//import static org.piyush.driver.DriverManager.getDriver;
+import static org.piyush.driver.DriverManagerTL.getDriver;
 
 public class CommonToAllPage {
 
