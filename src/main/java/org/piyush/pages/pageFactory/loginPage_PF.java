@@ -32,9 +32,9 @@ public class loginPage_PF extends CommonToAllPage {
         enterInput(username, PropertyReader.readyKey("username"));
         enterInput(password, "admin");
         clickElement(submitButton);
-        presenceOfElement(errorMsg);
-        visibilityOfElement(errorMsg);
-        return getElement(errorMsg).getText();
+//        presenceOfElement(errorMsg);
+//        visibilityOfElement(errorMsg);
+        return getElement(null).getText();
 
     }
 
