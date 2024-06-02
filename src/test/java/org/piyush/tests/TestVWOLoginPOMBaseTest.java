@@ -23,7 +23,7 @@ public class TestVWOLoginPOMBaseTest extends CommonToAllTest {
 
     }
 
-    @Test(priority = 2)
+    @Test(groups = "Sanity", priority = 2)
     public void testLoginPositive(){
         loginPage_POM loginPagePom = new loginPage_POM();
         loginPagePom.openVWOUrl();
