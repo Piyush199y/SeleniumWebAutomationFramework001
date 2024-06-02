@@ -5,10 +5,6 @@
           name="C:/Users/piyus/SeleniumWebAutomationFramework001/src/test/java/org/piyush/tests">
         <classes>
             <class name="org.piyush.tests.TestVWOLoginPOMBaseTest">
-                <methods>
-                    <include name="testLoginNegative"/>
-                    <include name="testLoginPositive"/>
-                </methods>
             </class>
         </classes>
     </test>
