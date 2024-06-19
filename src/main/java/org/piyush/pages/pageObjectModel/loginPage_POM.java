@@ -1,11 +1,8 @@
 package org.piyush.pages.pageObjectModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.piyush.base.CommonToAllPage;
 import org.piyush.utils.PropertyReader;
-
-import static org.piyush.driver.DriverManager.getDriver;
 
 public class loginPage_POM extends CommonToAllPage {
 

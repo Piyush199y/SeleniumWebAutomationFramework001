@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/piyus/SeleniumWebAutomationFramework001/src/test/java/org/piyush/tests/TestVWOLoginPOMBaseTest.java(failed)">
+    <classes>
+      <class name="org.piyush.tests.TestVWOLoginPOMBaseTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testLoginPositive"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.piyush.tests.TestVWOLoginPOMBaseTest -->
+    </classes>
+  </test> <!-- C:/Users/piyus/SeleniumWebAutomationFramework001/src/test/java/org/piyush/tests/TestVWOLoginPOMBaseTest.java(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
