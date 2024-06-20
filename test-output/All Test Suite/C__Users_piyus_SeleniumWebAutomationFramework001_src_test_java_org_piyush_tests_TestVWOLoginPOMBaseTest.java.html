@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 19 23:28:44 IST 2024</td>
+<td>Started on:</td><td>Thu Jun 20 00:44:48 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>58 seconds (58158 ms)</td>
+<tr><td>Total time:</td><td>81 seconds (81231 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,9 +80,9 @@ function toggleAllBoxes() {
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: [data-qa=&apos;lufexuloga&apos;] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.piyush.base.CommonToAllPage.presenceOfElement(CommonToAllPage.java:43)
+	at org.piyush.base.CommonToAllPage.presenceOfElement(CommonToAllPage.java:42)
 	at org.piyush.pages.pageObjectModel.dashboardPage_POM.loggedInUserName(dashboardPage_POM.java:16)
-	at org.piyush.tests.TestVWOLoginPOMBaseTest.testLoginPositive(TestVWOLoginPOMBaseTest.java:34)
+	at org.piyush.tests.TestVWOLoginPOMBaseTest.testLoginPositive(TestVWOLoginPOMBaseTest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,14 +111,14 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-qa=&apos;lufexuloga&apos;]&quot;}
-  (Session info: MicrosoftEdge=126.0.2592.61)
+  (Session info: chrome=124.0.6367.78)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [cb893da41f65563977b677d038e3fca8, findElement {value=[data-qa=&apos;lufexuloga&apos;], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.61, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58254}, msedge: {msedgedriverVersion: 126.0.2592.61 (12efce1c0fb4..., userDataDir: C:\Users\piyus\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58254/devtoo..., se:cdpVersion: 126.0.2592.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb893da41f65563977b677d038e3fca8
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [81f08450d5d1c26a4ded334e2f018679, findElement {using=css selector, value=[data-qa=&apos;lufexuloga&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:4444/devtool..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f08450d5d1c26a4ded334e2f018679
 	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -127,8 +127,7 @@ Session ID: cb893da41f65563977b677d038e3fca8
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
@@ -138,13 +137,13 @@ Session ID: cb893da41f65563977b677d038e3fca8
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 30 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace212232499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace212232499'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: [data-qa=&apos;lufexuloga&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1244775150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1244775150'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: [data-qa=&apos;lufexuloga&apos;] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.piyush.base.CommonToAllPage.presenceOfElement(CommonToAllPage.java:43)
+	at org.piyush.base.CommonToAllPage.presenceOfElement(CommonToAllPage.java:42)
 	at org.piyush.pages.pageObjectModel.dashboardPage_POM.loggedInUserName(dashboardPage_POM.java:16)
-	at org.piyush.tests.TestVWOLoginPOMBaseTest.testLoginPositive(TestVWOLoginPOMBaseTest.java:34)
+	at org.piyush.tests.TestVWOLoginPOMBaseTest.testLoginPositive(TestVWOLoginPOMBaseTest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,14 +172,14 @@ Session ID: cb893da41f65563977b677d038e3fca8
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-qa=&apos;lufexuloga&apos;]&quot;}
-  (Session info: MicrosoftEdge=126.0.2592.61)
+  (Session info: chrome=124.0.6367.78)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [cb893da41f65563977b677d038e3fca8, findElement {value=[data-qa=&apos;lufexuloga&apos;], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.61, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58254}, msedge: {msedgedriverVersion: 126.0.2592.61 (12efce1c0fb4..., userDataDir: C:\Users\piyus\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58254/devtoo..., se:cdpVersion: 126.0.2592.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb893da41f65563977b677d038e3fca8
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [81f08450d5d1c26a4ded334e2f018679, findElement {using=css selector, value=[data-qa=&apos;lufexuloga&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:4444/devtool..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f08450d5d1c26a4ded334e2f018679
 	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -189,8 +188,7 @@ Session ID: cb893da41f65563977b677d038e3fca8
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
@@ -201,8 +199,8 @@ Session ID: cb893da41f65563977b677d038e3fca8
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 30 more
 </pre></div></td>
-<td>31</td>
-<td>org.piyush.tests.TestVWOLoginPOMBaseTest@1af2d44a</td></tr>
+<td>32</td>
+<td>org.piyush.tests.TestVWOLoginPOMBaseTest@7a419da4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -213,15 +211,15 @@ Session ID: cb893da41f65563977b677d038e3fca8
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.piyush.tests.TestVWOLoginPOMBaseTest.testLoginNegative()'><b>testLoginNegative</b><br>Test class: org.piyush.tests.TestVWOLoginPOMBaseTest</td>
-<td></td>
-<td>12</td>
-<td>org.piyush.tests.TestVWOLoginPOMBaseTest@1af2d44a</td></tr>
-<tr>
 <td title='org.piyush.tests.TestVWOLoginPOMBaseTest.testDashboardPage()'><b>testDashboardPage</b><br>Test class: org.piyush.tests.TestVWOLoginPOMBaseTest</td>
 <td></td>
 <td>0</td>
-<td>org.piyush.tests.TestVWOLoginPOMBaseTest@1af2d44a</td></tr>
+<td>org.piyush.tests.TestVWOLoginPOMBaseTest@7a419da4</td></tr>
+<tr>
+<td title='org.piyush.tests.TestVWOLoginPOMBaseTest.testLoginNegative()'><b>testLoginNegative</b><br>Test class: org.piyush.tests.TestVWOLoginPOMBaseTest</td>
+<td></td>
+<td>18</td>
+<td>org.piyush.tests.TestVWOLoginPOMBaseTest@7a419da4</td></tr>
 </table><p>
 </body>
 </html>
